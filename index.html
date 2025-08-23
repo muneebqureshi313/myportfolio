@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Muneeb ur Rehman — Portfolio</title>
+  <meta name="description" content="Muneeb ur Rehman — Physics graduate, machine learning & computational physics portfolio." />
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="" crossorigin="anonymous">
+
+
+  <!-- Favicon (replace with your favicon file) -->
+  <link rel="icon" href="fivicon coder.png">
+
+ <!--style.css linke-->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <canvas id="particles"></canvas>
+  <div id="preloader"><div class="spinner"></div></div>
+
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">MRK</div>
+        <div class="sub">Physics • ML/DL • Quantum-AI </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#home" class="navlink active">Home</a></li>
+          <li><a href="#about" class="navlink">About</a></li>
+          <li><a href="#education" class="navlink">Education</a></li>
+          <li><a href="#projects" class="navlink">Projects</a></li>
+          <li><a href="#services" class="navlink">Services</a></li>
+          <li><a href="#contact" class="navlink">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="flex">
+        <button id="themeBtn" class="btn ghost" title="Toggle theme"><i class="fa-regular fa-sun"></i></button>
+        <button class="hamburger" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main id="home" class="hero">
+      <div class="left">
+        <div class="eyebrow">Hello, I'm</div>
+        <h1><span class="accent">Muneeb ur Rehman</span></h1>
+        <div class="typewrap" aria-hidden>
+          <div id="typewriter">Physics Graduate &amp;</div>
+          <div class="cursor"></div>
+        </div>
+        <p class="lead">I design and optimize computational models, blending physics with machine learning, deep learning, and emerging quantum AI techniques.
+           I develop scalable pipelines, craft data-driven simulations, and deliver end-to-end solutions for research. -- From concept to deployment.</p>
+
+        <div class="cta">
+          <a class="btn primary" href="#contact">Hire me</a>
+          <a class="btn ghost" href="My CV.pdf" download>Download CV</a>
+          <a class="btn" id="viewWork" href="#projects">View Work</a>
+        </div>
+
+        <div style="margin-top:18px;display:flex;gap:12px;align-items:center">
+          <a href="https://github.com/muneebqureshi313" target="_blank" class="btn" style="padding:10px"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/muneeb-ur-rehman-1433132125d/" target="_blank" class="btn" style="padding:10px"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:muneebqureshi2125@gmail.com.com" class="btn" style="padding:10px"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <aside class="card" aria-hidden>
+        <div class="avatar">
+          <img src="porimage.jpg" alt="Muneeb ur Rehman">
+        </div>
+      </aside>
+    </main>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-head reveal"><h2>About Me</h2><p>Short summary of who I am and what I do.</p></div>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <p>I am a Physics graduate specializing in machine learning, numerical simulations and scientific computing. 
+            I enjoy turning equations into efficient, well-tested code and creating visualizations that highlight important physical behaviour. Now being a Physicist, I am interested in Quantum-Computing, and appreciate its research based oppertunities.</p>
+
+          <ul style="margin-top:12px;color:var(--muted);line-height:1.8">
+            <li><strong>Expertise:</strong> Python, TensorFlow/PyTorch, NumPy, Panda, SciPy, MPI, Fast API, Scikitlearn, Qiskit-aer</li>
+            <li><strong>Tools:</strong> MATLAB, Jupyter notebook, Github, Kaggle, Power Bi, , Adobe Express.</li>
+            <li><strong>Interests:</strong> ML for physics, Quantum-Computing, scientific visualization, Research-oriented projects.</li>
+          </ul>
+        </div>
+
+        <div class="card reveal">
+          <h3 style="margin-top:0">Quick Stats</h3>
+          <div style="display:grid;gap:12px;margin-top:10px">
+            <div class="flex"><div style="flex:1">Python</div><div style="width:120px"><div class="meter"><span style="width:90%"></span></div></div></div>
+            <div class="flex"><div style="flex:1">ML Research</div><div style="width:120px"><div class="meter"><span style="width:85%"></span></div></div></div>
+            <div class="flex"><div style="flex:1">Scientific Visualization</div><div style="width:120px"><div class="meter"><span style="width:80%"></span></div></div></div>
+            <div class="flex"><div style="flex:1">JS / Web</div><div style="width:120px"><div class="meter"><span style="width:60%"></span></div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- EDUCATION -->
+   <section id="education">
+      <div class="section-head reveal">
+       <h2>Education</h2>
+        <p>My academic background and achievements.</p>
+      </div>
+
+      <div class="education-grid reveal">
+       <div class="edu-card">
+        <h3>BS in Physics</h3>
+         <span class="edu-meta">Pakistan Institute of Engineering & Applied Sciences (PIEAS) | 2021 – 2025</span>
+          <p>Specialization in computational physics, machine learning, and quantum computing. Thesis: <em>Ensemble ML approach for predicting Glass Forming Ability of BMGs</em>.</p>
+      </div>
+
+     <div class="edu-card">
+      <h3>Intermediate (FSc Pre-Engineering)</h3>
+      <span class="edu-meta">Punjab Daanish Boys School, DG Khan | 2019 – 2021</span>
+      <p>Focused on physics, mathematics, and chemistry. Graduated with distinction.</p>
+     </div>
+
+    <div class="edu-card">
+      <h3>Matriculation (Science)</h3>
+      <span class="edu-meta">Punjab Daanish Boys School, DG Khan | 2017 – 2019</span>
+      <p>Strong foundations in mathematics and physical sciences.</p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-head reveal"><h2>Selected Projects</h2><p>Filter and explore my work.</p></div>
+
+      <div class="reveal">
+        <div class="filters" id="filters">
+          <button data-filter="all" class="active">All</button>
+          <button data-filter="ml">Machine Learning</button>
+          <button data-filter="q-ai">Quantum-AI</button>
+          <button data-filter="viz">Visualization</button>
+        </div>
+
+        <div class="projects" id="projectsGrid">
+          <!-- Project items: replace thumbnails and text with real content -->
+          <article class="proj" data-tags="ml viz">
+            <img class="thumb" src="bmg img.png" alt="Project 1">
+            <div class="meta">
+              <h3>Ensemble-ML Approach for predicting the GFA of BMG's(Major Thesis)</h3>
+              <p style="color:var(--muted)">Staking Ensemble, Bayesian Optimization <em>(Python, Panda, NumPy, Scikilearn, Matplotlib)</em></p>
+            </div>
+          </article>
+
+          <article class="proj" data-tags="ml viz">
+            <img class="thumb" src="yeild img.png" alt="Project 2">
+            <div class="meta">
+              <h3>ML for yeild Strength prediction</h3>
+              <p style="color:var(--muted)">Random Forest & Extra-Tree with 97% accuracy. <em>(NumPy, Panda, Matplotlib)</em></p>
+            </div>
+          </article>
+
+          <article class="proj" data-tags="ml viz">
+            <img class="thumb" src="cancer img.png" alt="Project 3">
+            <div class="meta">
+              <h3>Breast Cancer Detection System</h3>
+              <p style="color:var(--muted)"> Train CNN and SVM on Scanned Image Classification. <em>(Pytorch, Scikitlearn)</em></p>
+            </div>
+          </article>
+
+          <article class="proj" data-tags="q-ai viz">
+            <img class="thumb" src="qai img.png" alt="Project 4">
+            <div class="meta">
+              <h3>Quantum Binary Classification of non-linear dataset using VQC</h3>
+              <p style="color:var(--muted)">Design Hybrid VQC encoding model wrap into QNN, obtained 97% accuracy. <em>(Qiskit-machine-learning, Matplotlib, Scikilearn, PyTorch)</em></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="section-head reveal"><h2>Services</h2><p>What I can deliver for you.</p></div>
+
+      <div class="services-grid reveal">
+        <div class="service">
+          <i class="fa-solid fa-brain"></i>
+          <h4>Machine Learning</h4>
+          <p style="color:var(--muted)">Build and deploy machine learning and deep learning models tailored to specific research or industry needs.</p>
+        </div>
+        <div class="service">
+          <i class="fa-solid fa-pen"></i>
+          <h4>Physics Tutoring</h4>
+          <p style="color:var(--muted)">Offer clear, concept-driven physics tutoring for students and professionals at all levels.</p>
+        </div>
+        <div class="service">
+          <i class="fa-solid fa-chart-area"></i>
+          <h4>Scientific Visualization</h4>
+          <p style="color:var(--muted)">Create engaging visualizations that turn complex scientific data into clear, actionable insights.</p>
+        </div>
+        <div class="service">
+          <i class="fa-solid fa-code"></i>
+          <h4>Research Assistance</h4>
+          <p style="color:var(--muted)">Provide end-to-end research support, from data analysis to publishable results.</p>
+        </div>
+      </div>
+    </section>
+
+   <!-- CONTACT Section-->
+   <section id="contact">
+      <div class="section-head reveal">
+     <h2>Contact</h2>
+      <p>Let’s start something great together — drop me a message below.</p>
+      </div>
+
+           <!-- Contact Form -->
+        <form class="contact-form reveal" id="contactForm">
+          <!-- Name Field -->
+           <label for="name" class="visually-hidden">Your Name</label>
+          <input type="text" name="name" id="name" placeholder="Your full name" required>
+
+           <!-- Email Field -->
+            <label for="email" class="visually-hidden">Your Email</label>
+           <input type="email" name="email" id="email" placeholder="Your best contact email" required>
+
+           <!-- Message Field -->
+            <label for="message" class="visually-hidden">Your Message</label>
+           <textarea name="message" id="message" rows="6" placeholder="Tell me about your project, goals, and timeline" required></textarea>
+
+           <!-- Submit Button -->
+           <button type="submit">Let’s Collaborate</button>
+        </form>
+
+         <!-- Alternative Contact Option -->
+           <div class="alt-contact reveal">
+             <p>Prefer email? Reach me directly at 
+                 <a href="mailto:muneebqureshi2125@gmail.com">muneebqureshi2125@gmail.com</a>
+             </p>
+           </div>
+
+         <!-- Form Confirmation Message -->
+          <div id="formMessage" style="display:none; color:green; margin-top:10px;">
+               ✅ Thanks! I’ll get back to you soon.
+           </div>
+    </section>
+
+      <!-- EmailJS SDK -->
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+         <script type="text/javascript">
+           (function(){
+              emailjs.init("webgcUOQrLxdcK_Vd"); // ⬅️ Replace with your EmailJS Public Key
+                })();
+        </script>
+
+       <!-- Link your JS file -->
+       <script src="js/script.js"></script>
+
+
+     <footer>
+        <div>© <span id="year"></span> Muneeb ur Rehman — Built with ❤️ and physics.</div>
+     </footer>
+  </div>
+
+  <!--Script.js Linke-->
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+
+<!--Server id= service_izh55ug-->
+<!--Templete id= template_961hpzf-->
+<!--Public key= webgcUOQrLxdcK_Vd-->
+<!--Private key= QasvjfFhurkym8dku19vi-->
