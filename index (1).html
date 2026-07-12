@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Muneeb ur Rehman — Quantum Computing &amp; ML Research Portfolio</title>
+<meta name="description" content="Research portfolio of Muneeb ur Rehman: quantum cryptanalysis, QKD, variational quantum algorithms, and machine learning." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="brand"><strong>M.U.R</strong> — research notebook</div>
+    <nav>
+      <ul>
+        <li><a href="#focus" class="navlink active">Focus</a></li>
+        <li><a href="#philosophy" class="navlink">Philosophy</a></li>
+        <li><a href="#casestudies" class="navlink">Case Studies</a></li>
+        <li><a href="#authority" class="navlink">Authority</a></li>
+        <li><a href="#toolkit" class="navlink">Toolkit</a></li>
+        <li><a href="#experience" class="navlink">Experience</a></li>
+        <li><a href="#education" class="navlink">Education</a></li>
+        <li><a href="#contact" class="navlink">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="menuBtn" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+
+<!-- ===================== HERO / FOCUS ===================== -->
+<section id="focus" class="wrap hero">
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow">Research focus</span>
+      <h1>Quantum cryptanalysis &amp; <em>machine learning</em> for physical systems.</h1>
+      <p class="focus-statement">
+        I build quantum circuits that break classical ciphers and machine-learning
+        pipelines that predict material behaviour — research at the intersection of
+        quantum computing, cryptography, and applied ML.
+      </p>
+      <p style="color:var(--ink-soft);max-width:560px">
+        Physics graduate (PIEAS) currently developing quantum cryptography protocols
+        as a Development Fellow. Prior work spans BB84 QKD simulation, variational
+        quantum cryptanalysis, and deep-learning diagnostics reaching 98% classification
+        accuracy on clinical imaging data.
+      </p>
+      <div class="contact-row">
+        <a class="pill primary" href="Muneeb-ur-Rehman-CV.pdf" download>↓ Download CV (PDF)</a>
+        <a class="pill" href="#casestudies">View case studies</a>
+        <a class="pill" href="https://github.com/muneebqureshi313" target="_blank" rel="noopener">GitHub</a>
+        <a class="pill" href="https://linkedin.com/in/muneeb-ur-rehman-1433132125d/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="bloch-wrap">
+      <div>
+        <svg id="bloch" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bloch sphere diagram representing a qubit state">
+          <circle cx="160" cy="160" r="118" fill="none" stroke="var(--ink-faint)" stroke-width="1"/>
+          <ellipse cx="160" cy="160" rx="118" ry="34" fill="none" stroke="var(--rule)" stroke-width="1"/>
+          <line x1="160" y1="20" x2="160" y2="300" stroke="var(--rule)" stroke-width="1"/>
+          <line x1="42" y1="160" x2="278" y2="160" stroke="var(--rule)" stroke-width="1"/>
+          <text x="160" y="14" text-anchor="middle" class="mono" font-size="12" fill="var(--teal)">|0⟩</text>
+          <text x="160" y="312" text-anchor="middle" class="mono" font-size="12" fill="var(--violet)">|1⟩</text>
+          <g class="bloch-vec">
+            <line x1="160" y1="160" x2="160" y2="52" stroke="var(--annot)" stroke-width="2"/>
+            <circle cx="160" cy="52" r="4" fill="var(--annot)"/>
+          </g>
+          <circle cx="160" cy="160" r="2.5" fill="var(--ink)"/>
+        </svg>
+        <div class="bloch-caption">state vector |ψ⟩ = α|0⟩ + β|1⟩</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PHILOSOPHY ===================== -->
+<div class="wrap">
+<section id="philosophy" class="page">
+  <div class="margin"><span class="num">§01</span><span class="tag mono">MANIFESTO</span></div>
+  <div class="entry">
+    <div class="entry-head">
+      <span class="eyebrow">Research philosophy</span>
+      <h2>How I treat data, bias, and null results.</h2>
+    </div>
+    <div class="philosophy-body">
+      <p><strong>Reproducibility before elegance.</strong> A result only counts once it survives repetition — quantum circuit fidelity gets validated across dozens of simulation runs, and ML models get cross-validated, not just tuned to a single split.</p>
+      <p><strong>Report the ceiling and the floor.</strong> Accuracy numbers are meaningless without the failure modes next to them. Every model I ship comes with its limitations stated as plainly as its headline metric.</p>
+      <p><strong>Null results are still data.</strong> A cipher that resists a quantum attack, or a feature that doesn't improve R², is information worth keeping — not a run to quietly discard.</p>
+      <p><strong>Method before tool.</strong> Qiskit, PyTorch, and scikit-learn are interchangeable; the rationale for choosing a variational ansatz over a brute-force oracle, or a stacking ensemble over a single regressor, is not.</p>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ===================== CASE STUDIES ===================== -->
+<div class="wrap">
+<section id="casestudies" class="page">
+  <div class="margin"><span class="num">§02</span><span class="tag mono">CASE STUDIES</span></div>
+  <div class="entry">
+    <div class="entry-head">
+      <span class="eyebrow">Selected research</span>
+      <h2>Four case studies, in depth.</h2>
+      <p class="sub">Each entry follows the same structure: abstract, objective, method, data, synthesis, key insight, impact, and an honest retrospective. Click to expand.</p>
+    </div>
+
+    <!-- Case 1 -->
+    <details class="case reveal" open>
+      <summary>
+        <div class="ct">
+          <h3>Grover's Search Attack on SPN Block Ciphers</h3>
+          <p class="tagline">Recovered secret keys for S-AES / Mini-AES with a 100% success rate across 20+ trials.</p>
+        </div>
+        <span class="plus">+</span>
+      </summary>
+      <div class="case-body">
+        <div class="field-grid">
+          <div class="field"><span class="flabel">Abstract</span><p>Quantum oracle-based key recovery against toy Substitution-Permutation Network ciphers, achieving the theoretical O(√N) quadratic speed-up over classical brute force.</p></div>
+          <div class="field"><span class="flabel">Objective</span><p>Test whether Grover's algorithm can practically recover secret keys from S-AES and Mini-AES given a single known plaintext-ciphertext pair.</p></div>
+          <div class="field"><span class="flabel">Method</span><p>Built custom quantum oracles and diffuser circuits in Qiskit that mark the correct key state, run inside Jupyter Notebook on the Qiskit Aer simulator.</p></div>
+          <div class="field"><span class="flabel">Data / setup</span><p>Known plaintext <code>6f6d</code>; target key space searched exhaustively via amplitude amplification, repeated over 20+ independent runs.</p></div>
+          <div class="field"><span class="flabel">Synthesis</span><p>Measurement histograms of the output register were inspected for a dominant peak corresponding to the marked (correct) key state.</p></div>
+          <div class="field"><span class="flabel">Key insight</span><p>Oracle construction, not qubit count, was the binding constraint — a cleanly factored oracle converged reliably where a naive one did not.</p></div>
+          <div class="field"><span class="flabel">Impact</span><p>Recovered keys <code>c73d</code> and <code>c45f</code> with 100% success across all 20+ trials, demonstrating quadratic cryptanalytic speed-up in simulation.</p></div>
+          <div class="field"><span class="flabel">Retrospective</span><p>Simulator-only: circuit depth and noise on real hardware would erode the speed-up; next step is testing on IBM Quantum hardware with error mitigation.</p></div>
+        </div>
+        <div class="stack">
+          <span class="chip">Qiskit</span><span class="chip">Python</span><span class="chip">Jupyter</span><span class="chip">Grover's Algorithm</span>
+        </div>
+      </div>
+    </details>
+
+    <!-- Case 2 -->
+    <details class="case reveal">
+      <summary>
+        <div class="ct">
+          <h3>Variational Quantum Cryptanalysis of 8-bit SPN Ciphers</h3>
+          <p class="tagline">Hardware-efficient ansatz converged on target keys within 150 optimization iterations.</p>
+        </div>
+        <span class="plus">+</span>
+      </summary>
+      <div class="case-body">
+        <div class="field-grid">
+          <div class="field"><span class="flabel">Abstract</span><p>A gradient-free variational attack that maps the key-space distribution of an 8-bit toy cipher without requiring a full Grover-style oracle.</p></div>
+          <div class="field"><span class="flabel">Objective</span><p>Determine whether a hardware-efficient variational ansatz can isolate a cryptographic key faster than brute-force classical search on constrained hardware.</p></div>
+          <div class="field"><span class="flabel">Method</span><p>Designed a problem-specific ansatz in Qiskit; optimized parameters with the gradient-free Nelder–Mead algorithm against classical S-AES/Mini-AES evaluation functions.</p></div>
+          <div class="field"><span class="flabel">Data / setup</span><p>Known plaintext <code>544a</code>; optimizer tracked convergence toward the target key across iterative parameter updates.</p></div>
+          <div class="field"><span class="flabel">Synthesis</span><p>Cost-landscape convergence plots were used to confirm the ansatz was narrowing toward a single dominant key hypothesis rather than plateauing.</p></div>
+          <div class="field"><span class="flabel">Key insight</span><p>Gradient-free optimization avoided barren-plateau issues that a gradient-based optimizer hit on the same ansatz depth.</p></div>
+          <div class="field"><span class="flabel">Impact</span><p>Recovered target key <code>df64</code>, converging within 150 optimization iterations — well inside the resource budget of near-term devices.</p></div>
+          <div class="field"><span class="flabel">Retrospective</span><p>Result is cipher-size specific; scaling the ansatz to larger keyspaces without re-triggering barren plateaus remains open.</p></div>
+        </div>
+        <div class="stack">
+          <span class="chip">Qiskit</span><span class="chip">Nelder–Mead</span><span class="chip">Variational Algorithms</span>
+        </div>
+      </div>
+    </details>
+
+    <!-- Case 3 -->
+    <details class="case reveal">
+      <summary>
+        <div class="ct">
+          <h3>Hybrid Quantum-Classical CNN for Multi-Disease Detection</h3>
+          <p class="tagline">National finalist, Pakistan's 1st Quantum Computing Hackathon — 75% accuracy across 4 disease categories.</p>
+        </div>
+        <span class="plus">+</span>
+      </summary>
+      <div class="case-body">
+        <div class="field-grid">
+          <div class="field"><span class="flabel">Abstract</span><p>A hybrid prototype (team "Qubitects") that feeds classical CNN and audio features into a quantum-encoded classifier for low-resource multi-disease screening.</p></div>
+          <div class="field"><span class="flabel">Objective</span><p>Explore whether quantum encoding of classical feature extractors (VGG16, Wav2Vec) improves screening for lung, heart, skin, and breast disease on limited hardware.</p></div>
+          <div class="field"><span class="flabel">Method</span><p>Extracted features classically, encoded them via ZZFeatureMap and amplitude encoding, then trained the hybrid network end-to-end using PyTorch's TorchConnector inside Qiskit Machine Learning.</p></div>
+          <div class="field"><span class="flabel">Data / setup</span><p>Multi-modal clinical inputs across four disease categories, deployed on a local server for functional testing.</p></div>
+          <div class="field"><span class="flabel">Synthesis</span><p>Compared hybrid-model accuracy against the classical-only baseline per disease category to isolate where quantum encoding helped versus added noise.</p></div>
+          <div class="field"><span class="flabel">Key insight</span><p>Transferring pretrained classical weights into the quantum encoding stage stabilized training more than initializing the hybrid model from scratch.</p></div>
+          <div class="field"><span class="flabel">Impact</span><p>Achieved 75% classification accuracy across 4 disease categories; selected as a national finalist by NCP and CERN's Open Quantum Institute.</p></div>
+          <div class="field"><span class="flabel">Retrospective</span><p>75% trails classical-only baselines on some categories — the honest conclusion is quantum encoding is not yet a clear win here, and that gap is the next experiment.</p></div>
+        </div>
+        <div class="stack">
+          <span class="chip">Qiskit ML</span><span class="chip">PyTorch</span><span class="chip">VGG16</span><span class="chip">Wav2Vec</span>
+        </div>
+      </div>
+    </details>
+
+    <!-- Case 4 -->
+    <details class="case reveal">
+      <summary>
+        <div class="ct">
+          <h3>Ensemble ML for Glass-Forming Ability of Bulk Metallic Glasses</h3>
+          <p class="tagline">Final Year Thesis — R² = 0.93, outperforming baseline Random Forest by 12%.</p>
+        </div>
+        <span class="plus">+</span>
+      </summary>
+      <div class="case-body">
+        <div class="field-grid">
+          <div class="field"><span class="flabel">Abstract</span><p>A stacking-ensemble regression framework predicting glass-forming ability (GFA) of bulk metallic glass alloys from composition data.</p></div>
+          <div class="field"><span class="flabel">Objective</span><p>Predict GFA accurately enough to prioritize which alloy compositions are worth synthesizing experimentally.</p></div>
+          <div class="field"><span class="flabel">Method</span><p>Recursive Feature Elimination reduced 12 candidate features to 6; Bayesian optimization tuned hyperparameters; a stacking regressor combined base learners into a meta-model.</p></div>
+          <div class="field"><span class="flabel">Data / setup</span><p>5,000+ alloy compositions drawn from simulated and literature-sourced datasets.</p></div>
+          <div class="field"><span class="flabel">Synthesis</span><p>Compared stacked-ensemble error (RMSE, MAE) against a Random Forest baseline on held-out compositions to quantify the ensemble's marginal value.</p></div>
+          <div class="field"><span class="flabel">Key insight</span><p>Reducing to 6 features via RFE improved generalization rather than hurting it — the extra 6 were mostly adding noise, not signal.</p></div>
+          <div class="field"><span class="flabel">Impact</span><p>R² = 0.93, RMSE = 1.42, MAE = 0.77 — a 12% improvement over the Random Forest baseline.</p></div>
+          <div class="field"><span class="flabel">Retrospective</span><p>Literature-sourced data carries measurement inconsistencies across labs; a curated, single-protocol dataset is the natural next step.</p></div>
+        </div>
+        <div class="stack">
+          <span class="chip">Python</span><span class="chip">Scikit-learn</span><span class="chip">Bayesian Optimization</span>
+        </div>
+      </div>
+    </details>
+  </div>
+</section>
+</div>
+
+<!-- ===================== AUTHORITY ===================== -->
+<div class="wrap">
+<section id="authority" class="page">
+  <div class="margin"><span class="num">§03</span><span class="tag mono">AUTHORITY</span></div>
+  <div class="entry">
+    <div class="entry-head">
+      <span class="eyebrow">Evidence of output</span>
+      <h2>Certifications, awards &amp; leadership.</h2>
+    </div>
+    <div class="authority-cols">
+      <div>
+        <h4>Certifications &amp; Training</h4>
+        <ul class="alist">
+          <li><span class="what">Intl. Training Workshop on Quantum Computing &amp; Quantum Information — COMSTECH, OIC</span><span class="when">May 2026</span></li>
+          <li><span class="what">QKD and BB84 Protocols: Theory to Simulation — QRISE, NUST</span><span class="when">Feb 2026</span></li>
+          <li><span class="what">Workshop on Quantum Computing — The Qubit Pakistan</span><span class="when">Nov 2025</span></li>
+          <li><span class="what">QNickel Quantum Computing Certification (OQI Hackathon) — QWorld</span><span class="when">Aug 2025</span></li>
+          <li><span class="what">QBronze Quantum Computing Certification (OQI Hackathon) — QWorld</span><span class="when">Aug 2025</span></li>
+          <li><span class="what">Basics of Machine Learning — Great Learning</span><span class="when">Jun 2024</span></li>
+          <li><span class="what">Crash Course on Python — Google</span><span class="when">Mar 2023</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Awards &amp; Leadership</h4>
+        <ul class="alist">
+          <li><span class="what">National Finalist, 1st Quantum Computing Hackathon — NCP &amp; CERN OQI</span><span class="when">Feb 2026</span></li>
+          <li><span class="what">Co-Organizer, Intl. Workshop on Recent Advances in Quantum Science — CMS, PIEAS</span><span class="when">Feb 2025</span></li>
+          <li><span class="what">Management Team Member — PIEAS Physics Society</span><span class="when">2022–Present</span></li>
+          <li><span class="what">Letter of Appreciation in Academics — PDBS, DG Khan</span><span class="when">Sep 2019</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ===================== TOOLKIT ===================== -->
+<div class="wrap">
+<section id="toolkit" class="page">
+  <div class="margin"><span class="num">§04</span><span class="tag mono">TOOLKIT</span></div>
+  <div class="entry">
+    <div class="entry-head">
+      <span class="eyebrow">Technical skills</span>
+      <h2>Toolkit matrix.</h2>
+    </div>
+    <div class="toolkit-grid">
+      <div class="tool-card">
+        <h4>Quantum Computing</h4>
+        <ul><li>Qiskit / Pennylane</li><li>BB84 &amp; QKD Protocols</li><li>Grover's Algorithm</li><li>VQA / QAOA / VQE</li><li>Quantum Oracles</li></ul>
+      </div>
+      <div class="tool-card">
+        <h4>Machine Learning</h4>
+        <ul><li>PyTorch / Scikit-learn</li><li>CNN, SVM, Random Forest</li><li>Ensemble &amp; Stacking</li><li>Bayesian Optimization</li><li>Transfer Learning (VGG16)</li></ul>
+      </div>
+      <div class="tool-card">
+        <h4>Languages</h4>
+        <ul><li>Python</li><li>FORTRAN</li><li>MATLAB</li></ul>
+      </div>
+      <div class="tool-card">
+        <h4>Tools &amp; Platforms</h4>
+        <ul><li>Jupyter / Google Colab</li><li>Git / GitHub</li><li>Wolfram Mathematica</li><li>Linux</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ===================== EXPERIENCE ===================== -->
+<div class="wrap">
+<section id="experience" class="page">
+  <div class="margin"><span class="num">§05</span><span class="tag mono">EXPERIENCE</span></div>
+  <div class="entry">
+    <div class="entry-head">
+      <span class="eyebrow">Professional experience</span>
+      <h2>Roles &amp; positions.</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <h3>Development Fellow — Physics, Quantum Communications Lab</h3>
+        <span class="when">September 2025 – Present</span>
+        <ul>
+          <li>Simulated quantum implementations of SPN and Feistel ciphers in Qiskit and Pennylane.</li>
+          <li>Ran quantum cryptanalysis via Grover's Search and variational quantum algorithms.</li>
+          <li>Validated circuit fidelity across 50+ simulation runs, achieving 99.2% average gate fidelity.</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <h3>Machine Learning Intern — EvoSoft (Remote)</h3>
+        <span class="when">May 2024 – August 2024</span>
+        <ul>
+          <li>Built an end-to-end breast cancer detection pipeline on 10,000+ MRI and X-ray images.</li>
+          <li>Reached 98% classification accuracy and 0.97 F1-score with CNN/SVM models.</li>
+          <li>Reduced overfitting by 35% through data augmentation and cross-validation.</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <h3>Summer Intern — NILOP, Islamabad</h3>
+        <span class="when">June 2024 – August 2024</span>
+        <ul>
+          <li>Synthesized Ag-NPs for photocatalytic water treatment, reaching 85% dye degradation.</li>
+          <li>Characterized 15+ nanoparticle batches via SEM and XRD analysis.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ===================== EDUCATION ===================== -->
+<div class="wrap">
+<section id="education" class="page">
+  <div class="margin"><span class="num">§06</span><span class="tag mono">EDUCATION</span></div>
+  <div class="entry">
+    <div class="entry-head">
+      <span class="eyebrow">Academic background</span>
+      <h2>Education.</h2>
+    </div>
+    <div class="edu-list">
+      <div class="edu-item">
+        <h3>BS in Physics — Pakistan Institute of Engineering &amp; Applied Sciences (PIEAS)</h3>
+        <span class="when">September 2021 – July 2025</span>
+        <p>Coursework: Computational Physics, Quantum Mechanics, Fundamentals of Machine Learning, Electromagnetic Theory, Statistical Mechanics.</p>
+      </div>
+      <div class="edu-item">
+        <h3>HSSC (FSc Pre-Medical) — Punjab Daanish Boys School, DG Khan</h3>
+        <span class="when">August 2019 – July 2021</span>
+      </div>
+      <div class="edu-item">
+        <h3>SSC (Matriculation, Science) — Punjab Daanish Boys School, DG Khan</h3>
+        <span class="when">August 2017 – July 2019</span>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ===================== CONTACT ===================== -->
+<div class="wrap">
+<section id="contact" class="page">
+  <div class="margin"><span class="num">§07</span><span class="tag mono">CONTACT</span></div>
+  <div class="entry">
+    <div class="entry-head">
+      <span class="eyebrow">Get in touch</span>
+      <h2>Contact gateway.</h2>
+    </div>
+    <div class="contact-grid">
+      <ul class="contact-list">
+        <li><span class="k">Email</span><a href="mailto:muneebqureshi2125@gmail.com">muneebqureshi2125@gmail.com</a></li>
+        <li><span class="k">Phone</span><a href="tel:+923360062333">+92 336 0062333</a></li>
+        <li><span class="k">LinkedIn</span><a href="https://linkedin.com/in/muneeb-ur-rehman-1433132125d/" target="_blank" rel="noopener">linkedin.com/in/muneeb-ur-rehman</a></li>
+        <li><span class="k">GitHub</span><a href="https://github.com/muneebqureshi313" target="_blank" rel="noopener">github.com/muneebqureshi313</a></li>
+        <li><span class="k">CV</span><a href="Muneeb-ur-Rehman-CV.pdf" download>Download PDF</a></li>
+      </ul>
+
+      <form class="contact-form" id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="What are you reaching out about?" required></textarea>
+        <button type="submit">Send message</button>
+        <div id="formMessage" style="display:none">✓ Thanks — I'll get back to you soon.</div>
+      </form>
+    </div>
+  </div>
+</section>
+</div>
+
+<footer>
+  <div>© <span id="year"></span> Muneeb ur Rehman</div>
+  <div class="mono">Built with rigor, not just React.</div>
+</footer>
+
+<!-- EmailJS: public key only — see README for setup notes -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
